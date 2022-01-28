@@ -5,7 +5,7 @@ while len(serie) == 0 or serie.upper()!="générale" or "generale" or "général
 
 #série générale
     if serie.upper() == "générale" or "generale" or "général" or "general":
-        print("Vousavez choisis la voie générale")
+        print("Vous avez choisis la voie générale")
         break
 #série technologique   
     elif serie.upper() == "technologique" :
