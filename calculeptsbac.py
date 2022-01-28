@@ -1,3 +1,16 @@
-#Voici la page sur laquelle nous ferons le projet qui je le rappelle est "calculer les points du bac".
-#Merci de mettre des noms compréhensible que l'on ait pas à chercher trop longtemps.
-#Pour le moment on ne note rien ici ce sera le commun
+#demande de série
+serie = ()
+while len(serie) == 0 or serie.upper()!="générale" or "generale" or "général" or "general":
+    serie = str(input("De quel série faites vous parties générale ou technologique. "))
+
+#série générale
+    if serie.upper() == "générale" or "generale" or "général" or "general":
+        print("Vousavez choisis la voie générale")
+        break
+#série technologique   
+    elif serie.upper() == "technologique" :
+        print("Vous êtes dans la série technologique.")
+
+        break
+    else :
+        print("Veuillez écrire soit : générale pour la voix général soit technologique pour la voix technologique.")
