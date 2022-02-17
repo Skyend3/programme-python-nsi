@@ -78,7 +78,7 @@ while not fin:
         
         def remplacenotefinales():
             notes = 99
-            libelle = "Donner votre moyenne de controle continue en "+ notecontrolecontinu[matiere]+  " : "
+            libelle = "Donner votre moyenne de controle continue en "+ noteepreuvefinal[matiere]+  " : "
             
             while  notes < 0.0 or notes > 20.0 :
                 notes = float(input(libelle))
@@ -166,7 +166,7 @@ while not fin:
         
         def remplacenotefinales():
             notes = 99
-            libelle = "Donner votre moyenne de controle continue en "+ notecontrolecontinu[matiere]+  " : "
+            libelle = "Donner votre moyenne de controle continue en "+ noteepreuvefinal[matiere]+  " : "
             
             while  notes < 0.0 or notes > 20.0 :
                 notes = float(input(libelle))
@@ -177,9 +177,10 @@ while not fin:
         while matiere < len (noteepreuvefinal):
             noteepreuvefinal[matiere] = remplacenotefinales()
             matiere = matiere + 1
-  
+            
+           
         #Note épreuves continue
-        HG = notecontrolecontinu[0] * 6
+        HG = notecontrolecontinu[0] * 6.0
         LVA = notecontrolecontinu[1] * 6
         LVB = notecontrolecontinu[2] * 6
         Maths = notecontrolecontinu[3]  * 6
